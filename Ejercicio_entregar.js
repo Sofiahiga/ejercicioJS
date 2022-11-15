@@ -134,3 +134,83 @@ while (num_aleatorio!==numero) {
 
 alert("Buen trabajo, el número era el " + num_aleatorio + " lo lograste luego de " + i  + " intentos");
 console.log(num_aleatorio)*/
+
+/* El siguiente código tiene un error que se produce en algunos casos especiales, descubrirlo y arreglarlo: */
+ // Obtener edad
+
+/*let edad=parseInt(prompt("Ingrese edad"));
+if(edad < 13) {
+    console.log("Es niño");
+}else if(edad < 18 ){
+     console.log("Es adolecente");
+}else{
+     console.log("Es adulto");
+} */
+
+/*Negar las siguientes expresión de forma de mantener la tabla de verdad, crear el programa que muestre el valor de la expresión a medida que se cambia los valores de a y b.
+
+!a && !b
+!a || !b */
+
+//Loops
+
+//WHILE
+
+/* Mostrar todos los números de 1 a n aumentando de 1 en 1 donde n lo ingresa el usuario en un prompt. */
+
+/*let n=parseInt(prompt("Ingrese un numero"));
+i= 0
+
+while (i<n) {
+    i++
+    console.log(i)
+
+
+}*/
+
+/*Mostrar todos los números de 1 a N aumentando de 2 en 2 donde n lo ingresa el usuario en un prompt.*/
+
+/*let n=parseInt(prompt("Ingrese un numero"));
+i= 0
+
+while (i<n) {
+    i= i + 2;
+    console.log(i);
+}*/
+
+/* Mostrar todos los números de N a 1 disminuyendo de 1 en 1 donde n lo ingresa el usuario en un prompt. */
+
+/*let n=parseInt(prompt("Ingrese un numero"));
+i= n
+
+while (i>=1) {
+    console.log(i);
+    i--
+   
+}*/
+
+/* Escribir utilizando console.log la tabla del 9 hasta 9x10. */
+
+/*n=9
+i=1
+while (i<=10) {
+    console.log(n + "x" + i + " = " + n*i)
+    i++;
+
+}*/
+
+/* Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. */
+
+let numero=parseInt(prompt("Ingrese un numero"));
+
+if (numero.match(/^[0-9]+$/)) {
+    alert("Ingrese solo numeros por favor");
+
+} else {
+    numero.toString();
+    for (x=0; x<numero.length; x++) {
+        sumar= sumar + numero.charAt(x);
+
+        
+}
+}

@@ -201,16 +201,46 @@ while (i<=10) {
 
 /* Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. */
 
-let numero=parseInt(prompt("Ingrese un numero"));
+var numero=parseInt(prompt("Ingrese un numero"));
+x=0
+i=0
 
-if (numero.match(/^[0-9]+$/)) {
-    alert("Ingrese solo numeros por favor");
+while (!Number.isInteger(numero)) {
+    alert("Número invalido");
+    numero=parseInt(prompt("Ingrese número nuevamente"));
+}
+numero=numero.toString()
+alert("Número válido");
 
+
+while (x<numero.length ) {
+    i += parseInt(numero.charAt(x))
+    x++
+
+}
+console.log(i);
+   
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+/*let texto = prompt("Ingrese un texto");
+let primer_caracter= texto.charAt(0);
+
+if (isNaN(primer_caracter)) {
+    alert("texto comienza con una letra");
 } else {
-    numero.toString();
-    for (x=0; x<numero.length; x++) {
-        sumar= sumar + numero.charAt(x);
+    alert("El texto comienza con un número");
+}*/
 
-        
-}
-}
+

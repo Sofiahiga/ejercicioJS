@@ -121,21 +121,16 @@ if (es_bisiesto(anio)== 28) {
 
 /* Escribir un programa JavaScript en el que el programa escoge al azar un entero entre 1 y 10, el usuario , luego a el usuario se le pedirá que introduzca un número en un popup para intentar adivinarlo. Si la entrada del usuario coincide con el número de conjetura, el programa mostrará un mensaje de "buen trabajo" de lo contrario mostrará un mensaje de "No corresponde" */
 
-function num_aleatorio() {
-    return Math.ceil(Math.random()*11);
-    
-}
-
-
+/*let num_aleatorio= (Math.ceil(Math.random()*10));
 let numero=parseInt(prompt("Ingrese un numero del 1 al 10"));
-console.log(num_aleatorio());
+i=1
 
-if (numero !== num_aleatorio) {
-    alert("No corresponde")
-} else {
-    alert("Buen trabajo");
+
+while (num_aleatorio!==numero) {
+    alert("NO corresponde")
+    numero=parseInt(prompt("Ingrese un numero del 1 al 10"))
+    i++;
 }
 
-
-
-
+alert("Buen trabajo, el número era el " + num_aleatorio + " lo lograste luego de " + i  + " intentos");
+console.log(num_aleatorio)*/

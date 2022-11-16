@@ -43,7 +43,7 @@ if (numero%2 == 0) {
 /*let numero=parseInt(prompt("Ingrese un número"));
 
 if (numero%5 == 0) {
-    console.log(numero + " es divisible por 5")
+    console.log(numero + " es divisible por 5. El resultado es " + numero/5)
 } else {
     console.log(numero + " NO es divisible por 5");
 }*/
@@ -53,7 +53,7 @@ if (numero%5 == 0) {
 /*let numero=parseInt(prompt("Ingrese un número"));
 
 if (numero%5 == 0 && numero%11==0) {
-    console.log(numero + " es divisible por 5 y 11")
+    console.log(numero + " es divisible por 5 y 11. " + numero + "dividido 5 es " + numero/5 ". Y " + numero" dividido 11 es " + numero/11)
 } else {
     console.log(numero + " NO es divisible por 5 y 11")
 }*/
@@ -199,13 +199,13 @@ while (i<=10) {
 
 }*/
 
-/* Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. */
+/* Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. TENGO DUDA*/
 
-var numero=parseInt(prompt("Ingrese un numero"));
+/*var numero=parseInt(prompt("Ingrese un numero"));
 x=0
 i=0
-
-while (!Number.isInteger(numero)) {
+n=0
+while (Number.isNaN(numero.charAt(x))) {
     alert("Número invalido");
     numero=parseInt(prompt("Ingrese número nuevamente"));
 }
@@ -218,29 +218,121 @@ while (x<numero.length ) {
     x++
 
 }
-console.log(i);
+console.log(i);*/
+
    
+/* Realizar la suma de todos los números pares entre N y M donde N y M los ingresa un usuario. */
+
+/*let n= parseInt(prompt("Ingrese un número"));
+let m= parseInt(prompt("Ingrese otro número"));
+
+while (n>m) {
+    m= parseInt(prompt("ERROR, ingrese un número más grande que el anterior por favor"));
+}
+    
+i=n
+acum=0
+
+while (i<=m) {
+    if (i%2==0) {
+        
+        sumar= x + " + " + i + " = " + (acum+=i)
+        console.log(sumar);
+        
+
+    }
+    i++
+} 
+console.log(acum);*/
+
+//Realizar la sumatoria de los primeros N números, donde N es ingresado por el usuario. 
+
+/*let n= parseInt(prompt("Ingrese un número"));
+
+acum=0
+count=1
+
+while (!Number.isInteger(n)) {
+    n= parseInt(prompt("Error, ingrese un número por favor"))
+}
+
+while(count<=n) {
+    console.log(acum + " + "+ count+ " = "+ (acum += count));
+    count++
+    
+}
+console.log(acum)*/
+
+//Realizar el factorial de los primeros N números.
+
+
+/*let n= parseInt(prompt("Ingrese un número"));
+
+acum=n
+count=1
+
+while (!Number.isInteger(n)) {
+    n= parseInt(prompt("Error, ingrese un número por favor"))
+}
+
+while(count<n) {
+    console.log(acum + " x "+ count+ " = "+ (acum *= count));
+    count++
+    
+}
+
+console.log(acum)*/
+
+//con FOR
+/*for (count; count<n ; count++) {
+    console.log(acum + " x "+ count+ " = "+ (acum *= count));
+    
+    
+}
+
+console.log(acum)*/
+
+//Ejercicios de divisores con while (o for)
+
+//Encontrar todos los divisores de un número.
+/*let n=parseInt(prompt("Ingrese un número"));
+
+while (Number.isNaN(n)) {
+    n=parseInt(prompt("Error, ingrese un número"));
+
+}
+
+count=0
+divisores=[]
+for (count; count<=n; count++) {
+    if (n%count==0) {
+        divisores.push(count)
+
+
+    }
+}
+console.log(divisores)*/
+
+//Determinar si un número ingresado por el usuario en un loop es primo o no, validar que el número ingresado sea mayor o igual a dos.
+
+
+let n=parseInt(prompt("Ingrese un número"));
+
+while (n<2) {
+    n=parseInt(prompt("Error, ingrese un número mayor o igual a 2"));
+
+}
+
+
+
+
+
+
+
 
     
 
 
 
-
-
-
-
-
-    
-
-
-
-/*let texto = prompt("Ingrese un texto");
-let primer_caracter= texto.charAt(0);
-
-if (isNaN(primer_caracter)) {
-    alert("texto comienza con una letra");
-} else {
-    alert("El texto comienza con un número");
-}*/
 
 

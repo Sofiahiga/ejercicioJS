@@ -396,13 +396,13 @@ acum==num_perfecto? console.log(num_perfecto + " es un numero perfecto") : conso
 //Generar los primeros N números primos, donde n es ingresado por el usuario.
 
 
-n= parseInt(prompt("Ingrese un numero"));
+/*n= parseInt(prompt("Ingrese un numero"));
 
 while (Number.isNaN(n)) {
     n= parseInt(prompt("Error, ingrese un número"));
 }
 
-let numeros_primos=[]
+
 function es_primo(numero) {
     count=0
     
@@ -412,27 +412,23 @@ function es_primo(numero) {
         }
     }
     if (count==2) {
-        numeros_primos.push(numero)
+        
         return true;
         
     } else {
         return false;
     }
 } 
+
+let num_primos=[]
 numero=1
-while (numeros_primos.lenght <=n){
-    numeros_primos.length=es_primo(numero);
-    numero++;
-}
-
-
-
-
-
-/*while (numeros_primos.length <= n) {
-    if (es_primo(numero)) {
-        numero++;
-        numeros_primos.push(numero)
+while ((num_primos.length)<n) {
+    if (es_primo(numero)){
+        num_primos.push(numero);
     }
+    numero++;
+} console.log(num_primos)*/
 
-}console.log(numeros_primos)*/
+
+
+

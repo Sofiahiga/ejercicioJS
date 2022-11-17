@@ -59,8 +59,20 @@ if (numero%5 == 0 && numero%11==0) {
 }*/
 
 /* Crear un programa que le pida al usuario dos números en un Prompt y luego muestre en un alerta el número mayor. */
+
 /*let num_uno = parseInt(prompt("Ingrese un numero"));
+
+
+while (Number.isNaN(num_uno)) {
+    num_uno = parseInt(prompt("Error, ingrese un numero"));
+    
+} 
 let num_dos = parseInt(prompt("Ingrese otro numero"));
+
+while (Number.isNaN(num_dos)) {
+    num_dos = parseInt(prompt("Error, ingrese un numero"))
+}
+
 
 if (num_uno>num_dos) {
     alert(num_uno + " es mayor");
@@ -265,13 +277,12 @@ console.log(acum)*/
 
 //Realizar el factorial de los primeros N números.
 
+//let n= parseInt(prompt("Ingrese un número"));
 
-/*let n= parseInt(prompt("Ingrese un número"));
+//acum=1
+//count=1
 
-acum=n
-count=1
-
-while (!Number.isInteger(n)) {
+/*while (!Number.isInteger(n)) {
     n= parseInt(prompt("Error, ingrese un número por favor"))
 }
 
@@ -282,6 +293,29 @@ while(count<n) {
 }
 
 console.log(acum)*/
+
+/*let numero=parseInt(prompt("Ingrese un numero"));
+n=1
+while(n<=numero){
+    console.log(factorial(n));
+    n++;
+}
+
+function factorial(n) {
+    acum=1
+    for (x=n;x>=1;x--) {
+        acum *= x
+    } return acum
+}*/
+
+
+/*while (count<n) {
+    console.log(factorial(count));
+    count++
+
+
+}*/
+
 
 //con FOR
 /*for (count; count<n ; count++) {
@@ -315,24 +349,90 @@ console.log(divisores)*/
 
 //Determinar si un número ingresado por el usuario en un loop es primo o no, validar que el número ingresado sea mayor o igual a dos.
 
+/*let n=parseInt(prompt("Ingrese un número"));
 
-let n=parseInt(prompt("Ingrese un número"));
+while (Number.isNaN(n) || n<2) {
+    n=parseInt(prompt("Error, ingrese un número por favor que sea mayor o igual a 2."));
+   
+}
 
-while (n<2) {
-    n=parseInt(prompt("Error, ingrese un número mayor o igual a 2"));
+count=0
+for (x=0; x<=n; x++) {
+    if(n%x==0) {
+        count++
+    } 
 
+    
+} 
+
+if (count > 2) {
+    console.log(n + " no es un número primo");
+} else {
+    console.log(n + " es un número primo");
+
+}*/
+
+//Crear un programa que determine si un número es perfecto o no, (se dice que un número es perfecto si el número es igual a sus divisores, ejemplos 6 = 1 + 2 + 3)
+
+/*let num_perfecto= parseInt(prompt("Ingrese un numero, por favor"))
+
+while (Number.isNaN(num_perfecto)){
+    num_perfecto=parseInt(prompt("Error, ingrese un numero, por favor"))
+
+}
+
+acum=0
+for (x=0; x<num_perfecto; x++) {
+    if (num_perfecto%x==0) {
+        acum +=x
+    }
+}
+
+acum==num_perfecto? console.log(num_perfecto + " es un numero perfecto") : console.log(num_perfecto + " no es un numero perfecto")*/
+
+
+//DOBLE LOOP
+
+//Generar los primeros N números primos, donde n es ingresado por el usuario.
+
+
+n= parseInt(prompt("Ingrese un numero"));
+
+while (Number.isNaN(n)) {
+    n= parseInt(prompt("Error, ingrese un número"));
+}
+
+let numeros_primos=[]
+function es_primo(numero) {
+    count=0
+    
+    for(x=1; x<=(numero); x++) {       
+        if ((numero)%x==0) {
+            count++
+        }
+    }
+    if (count==2) {
+        numeros_primos.push(numero)
+        return true;
+        
+    } else {
+        return false;
+    }
+} 
+numero=1
+while (numeros_primos.lenght <=n){
+    numeros_primos.length=es_primo(numero);
+    numero++;
 }
 
 
 
 
 
+/*while (numeros_primos.length <= n) {
+    if (es_primo(numero)) {
+        numero++;
+        numeros_primos.push(numero)
+    }
 
-
-
-    
-
-
-
-
-
+}console.log(numeros_primos)*/

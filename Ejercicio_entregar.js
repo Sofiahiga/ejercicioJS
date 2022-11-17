@@ -429,6 +429,37 @@ while ((num_primos.length)<n) {
     numero++;
 } console.log(num_primos)*/
 
+//Generar los primeros N números perfectos.
 
+/*function es_perfecto(numero) {
+    acum=0
+    for (x=1; x<numero; x++) {
+        if (numero%x==0) {
+            acum +=x
+        }
+        
+    }
+    if (acum==numero) {
+        return true;
+    }
+
+}
+
+let n= parseInt(prompt("Ingrese un numero"));
+
+while (Number.isNaN(n)) {
+    n=parseInt(prompt("Error, ingrese un número"));
+}
+
+num_perfectos=[]
+
+numero=1
+while ((num_perfectos.length)< n) {
+    if (es_perfecto(numero) ){
+        num_perfectos.push(numero);
+    }
+    numero++;
+}
+console.log(num_perfectos);*/
 
 

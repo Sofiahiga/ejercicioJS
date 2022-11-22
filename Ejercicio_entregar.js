@@ -518,14 +518,22 @@ console.log(num_perfectos);*/
 //Patrones con Loop anidados
 //Dibujar los siguientes patrones ocupando document.write, para rellenar los espacios vacíos se debe imprimir un espacio vacío.
 
-/*Cuadrado lleno:
+//Cuadrado lleno:
 
-*****
-*****
-*****
-*****
-*****
-Cuadrado hueco:
+/*Alertfunction cuadradoLleno() {
+    for (let i=0; i<5;i++) {
+        for(let x=0; x<5; x++) {
+        document.write("*");
+        } 
+        document.write("<br/>")
+    }
+    ;
+}
+
+cuadradoLleno();
+*/
+
+/*Cuadrado hueco:
 
 *****
 *   *

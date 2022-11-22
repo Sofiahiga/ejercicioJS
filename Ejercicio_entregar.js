@@ -286,7 +286,7 @@ while (Number.isNaN(numero)) {
 
 /* Realizar la suma de todos los números pares entre N y M donde N y M los ingresa un usuario. */
 
-let n= prompt("Ingrese un número");
+/*let n= prompt("Ingrese un número");
 while (tiene_letras(n)) {
     n= prompt("ERROR, solo debe ingresar números");
 }
@@ -309,7 +309,7 @@ while (i<=m) {
     }
     i++
 } 
-console.log(acum);
+console.log(acum);*/
 
 //Realizar la sumatoria de los primeros N números, donde N es ingresado por el usuario. 
 
@@ -515,4 +515,72 @@ while ((num_perfectos.length)< n) {
 }
 console.log(num_perfectos);*/
 
+//Patrones con Loop anidados
+//Dibujar los siguientes patrones ocupando document.write, para rellenar los espacios vacíos se debe imprimir un espacio vacío.
 
+/*Cuadrado lleno:
+
+*****
+*****
+*****
+*****
+*****
+Cuadrado hueco:
+
+*****
+*   *
+*   *
+*   *
+*****
+Tablero de Ajedrez:
+
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+* * * * * * * *
+ * * * * * * * 
+
+Cuadrado hueco:
+
+*****
+*   *
+*   *
+*   *
+*****
+Piramide Izquierda:
+
+*     
+**    
+***   
+****  
+***** 
+Pirámide centrada
+
+*
+***
+*****
+*******
+*********
+Pirámide invertida
+
+*********
+*******
+*****
+***
+*
+Diamante:
+
+*
+***
+*****
+*******
+*********
+*******
+*****
+***
+*
+
+*/

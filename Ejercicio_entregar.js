@@ -263,25 +263,25 @@ while (i<=10) {
 
 /* Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. TENGO DUDA*/
 
-/*var texto=prompt("ingrese un numero");*/
+/* var texto=prompt("ingrese un numero");
 
-/*while (tiene_letras(texto)) {
+while (tiene_letras(texto)) {
     texto= prompt("ERROR, solo debe ingresar números");
-}*/
+}
 
-/*acum=0
+acum=0
 
 for(x=0; x<texto.length;x++) {
     acum+=parseInt(texto.charAt(x));
 }
-console.log(acum);*/
+console.log(acum); */
 
 /*let numero=parseInt(prompt)
 
 while (Number.isNaN(numero)) {
     alert("Número invalido");
     numero=parseInt(prompt("Ingrese número nuevamente"));
-}*/
+}
 
 
 /* Realizar la suma de todos los números pares entre N y M donde N y M los ingresa un usuario. */
@@ -520,7 +520,7 @@ console.log(num_perfectos);*/
 
 //Cuadrado lleno:
 
-/*Alertfunction cuadradoLleno() {
+/*function cuadradoLleno() {
     for (let i=0; i<5;i++) {
         for(let x=0; x<5; x++) {
         document.write("*");
@@ -533,14 +533,34 @@ console.log(num_perfectos);*/
 cuadradoLleno();
 */
 
-/*Cuadrado hueco:
+//Cuadrado hueco:
+/*
+*****
+*   *
+*   *
+*   *
+*****
+ */
+/* function cuadradoHueco() {
+    for (let i=0; i<5; i++) {
+        document.write("*")
+    }
+    document.write("<br/>");
+    for (let x=0; x<3; x++) {
+        document.write("*&nbsp &nbsp &nbsp *");
+        document.write("<br/>");     
+    }
+    for (let i=0; i<5; i++) {
+        document.write("*")
+    }
+    document.write("<br/>");
+}
 
-*****
-*   *
-*   *
-*   *
-*****
-Tablero de Ajedrez:
+cuadradoHueco()  */
+
+
+
+/* Tablero de Ajedrez:
 
 * * * * * * * *
  * * * * * * * 
@@ -550,21 +570,53 @@ Tablero de Ajedrez:
  * * * * * * * 
 * * * * * * * *
  * * * * * * * 
+ */
+/* function ajedrez() {
+    for (let x=0; x<4; x++){
+        for (let y=0; y<8; y++){
+            document.write("&nbsp")    
+            document.write("*")
+            
+        }document.write("<br>");
+        document.write("&nbsp")
+        for (let v=0; v<7; v++){
+            
+            document.write("&nbsp");
+            document.write("*");
+        }document.write("<br>");
+    }
+}
 
-Cuadrado hueco:
+ajedrez(); */
 
-*****
-*   *
-*   *
-*   *
-*****
-Piramide Izquierda:
+/* Piramide Izquierda:
 
 *     
 **    
 ***   
 ****  
-***** 
+*****  */
+
+/* function piramideIzquierda(){
+        document.write("*");
+        document.write("<br>");
+        for (let y=0; y<2; y++) {
+            document.write("*")
+        } document.write("<br>");
+        for (let x=0; x<3; x++) {
+            document.write("*");
+        } document.write("<br>");
+        for (let p=0; p<4; p++) {
+            document.write("*");
+        } document.write("<br>");
+        for (let d=0; d<5; d++) {
+            document.write("*");
+        } 
+    
+}
+
+piramideIzquierda(); */
+/* 
 Pirámide centrada
 
 *
@@ -572,23 +624,96 @@ Pirámide centrada
 *****
 *******
 *********
-Pirámide invertida
+ */
+
+/* function piramideCentrada(){
+        document.write("*");
+        document.write("<br>");
+        for (let y=0; y<3; y++) {
+            document.write("*")
+        } document.write("<br>");
+        for (let x=0; x<5; x++) {
+            document.write("*");
+        } document.write("<br>");
+        for (let p=0; p<7; p++) {
+            document.write("*");
+        } document.write("<br>");
+        for (let d=0; d<9; d++) {
+            document.write("*");
+        } 
+    
+} */
+
+/* piramideCentrada(); */ 
+
+/* Pirámide invertida
 
 *********
 *******
 *****
 ***
-*
-Diamante:
-
-*
-***
-*****
-*******
-*********
-*******
-*****
-***
-*
-
+* 
 */
+
+/* function piramideInvertida(){
+    for (let y=0; y<9; y++) {
+        document.write("*")
+    } document.write("<br>");
+    for (let x=0; x<7; x++) {
+        document.write("*");
+    } document.write("<br>");
+    for (let p=0; p<5; p++) {
+        document.write("*");
+    } document.write("<br>");
+    for (let d=0; d<3; d++) {
+        document.write("*");
+    }  document.write("<br>")
+    document.write("*");
+}
+ */
+/* piramideInvertida(); */
+
+/* Diamante:
+
+*
+***
+*****
+*******
+*********
+*******
+*****
+***
+*
+
+ */
+/* function diamante(){
+    document.write("*");
+document.write("<br>");
+for (let y=0; y<3; y++) {
+    document.write("*")
+} document.write("<br>");
+for (let x=0; x<5; x++) {
+    document.write("*");
+} document.write("<br>");
+for (let p=0; p<7; p++) {
+    document.write("*");
+} document.write("<br>");
+for (let d=0; d<9; d++) {
+    document.write("*");
+} 
+document.write("<br>");
+for (let x=0; x<7; x++) {
+    document.write("*");
+} document.write("<br>");
+for (let p=0; p<5; p++) {
+    document.write("*");
+} document.write("<br>");
+for (let d=0; d<3; d++) {
+    document.write("*");
+}  document.write("<br>")
+document.write("*");
+} 
+
+diamante();*/
+
+
